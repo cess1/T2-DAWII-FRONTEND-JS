@@ -77,8 +77,8 @@ async function autenticar() {
 
     } catch (error) {
         
-        console.log('Error: Ocurrió un problema con la autenticación', error);
-        mostrarAlerta('Error: Ocurrió un problema con la autenticación');
+        console.log('Error: Ocurrió un problema', error);
+        mostrarAlerta('Error: Ocurrió un problema');
 
     }
 
