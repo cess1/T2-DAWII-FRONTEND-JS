@@ -12,6 +12,12 @@ window.addEventListener('load', function(){
     const password = this.document.getElementById('password');
     const btnIngresar = this.document.getElementById('btnIngresar');
     const msgError = this.document.getElementById('msgError');
+    const msgSucces = this.document.getElementById('msgSucces');
+    const resultLogout = JSON.parse(this.localStorage.getItem('resultLogout'));
+
+    if (resultLogout) {
+        mostrarAlerta(`${resultLogout.mensajeError}`);
+    }
 
     // implementar listener del boton
     btnIngresar.addEventListener('click', function(){
